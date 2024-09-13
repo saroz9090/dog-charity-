@@ -287,3 +287,34 @@ body {
 .donation-amount {
     color: #4caf50; /* Color for the donation amount */
 }
+
+
+/* QR Container Styles */
+.qr-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.qr-code {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* QR Text Styles */
+.qr-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    font-weight: 600;
+}
