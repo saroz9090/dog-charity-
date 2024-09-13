@@ -2,7 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: url('luna.jpg') no-repeat center center fixed, 
-                linear-gradient(135deg, rgba(243, 244, 246, 0.5), rgba(229, 231, 235, 0.5));
+                linear-gradient(135deg, rgba(243, 244, 246, 0.7), rgba(229, 231, 235, 0.5));
     background-size: cover;
     background-blend-mode: overlay; /* Optional: blends the gradient with the image */
     margin: 0;
@@ -10,19 +10,21 @@ body {
     overflow-x: hidden;
 }
 
-/* Existing styles here... */
+/* Container Styles */
 .container {
     margin: 50px auto;
     padding: 30px;
     max-width: 600px;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0); /* Translucent white background */
+    backdrop-filter: blur(10px); /* Glassy effect */
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-top: 10px solid #e91e63;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease-in-out forwards;
 }
+
 
 /* Header Styles */
 .header h1 {
@@ -73,13 +75,14 @@ body {
 
 .progress-background {
     fill: none;
-    stroke: #ddd;
+    stroke: #ffffff; /* White background color for better contrast */
     stroke-width: 10;
+    opacity: 0.4; /* Slightly transparent to maintain the glassy effect */
 }
 
 .progress-bar {
     fill: none;
-    stroke: #e91e63;
+    stroke: #e91e63; /* Bright color for the progress */
     stroke-width: 10;
     stroke-dasharray: 282.6; /* Circumference of the circle (2 * π * radius) */
     stroke-dashoffset: 282.6;
@@ -119,6 +122,7 @@ body {
 .circular-progress-container:hover #progress-callout {
     display: block;
 }
+
 
 /* Details Section Styles */
 .details {
@@ -318,3 +322,32 @@ body {
     margin-top: 8px;
     font-weight: 600;
 }
+
+/* Footer Styles */
+.footer {
+    background: rgba(255, 255, 255, 0.3); /* Translucent white background */
+    backdrop-filter: blur(10px); /* Glassy effect */
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Footer Link Styles */
+.footer a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff4081;
+    text-decoration: underline;
+}
+
