@@ -1,5 +1,5 @@
 // Initial setup
-const goalAmount = 50000;
+const goalAmount = 20000;
 let collectedAmount = 0;
 
 // Function to update progress
