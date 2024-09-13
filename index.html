@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraiser for Spaying Luna and Chewy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fundraiser for Spaying Luna and Chewy</h1>
+            <p>Help us raise funds for spaying our beloved dogs.</p>
+        </div>
+
+        <div class="amount">
+            <p>Goal: Rs <span id="goal-amount">50000</span></p>
+            <p>Collected: Rs <span id="collected-amount">0</span></p>
+        </div>
+
+        <div class="circular-progress-container">
+            <svg class="circular-progress" viewBox="0 0 100 100">
+                <circle class="progress-background" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <div id="progress-text">0%</div>
+            <div id="progress-callout"></div>
+        </div>
+
+       
+            <a href="contributors.html" class="contributors-link">View Contributors</a>
+        
+
+        <img src="esewa-qr.jpg" alt="Esewa QR Code" class="qr-code">
+        <img src="bank-qr.jpg" alt="Bank QR Code" class="qr-code">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
