@@ -132,21 +132,27 @@ body {
     margin: 20px 0;
     line-height: 1.8;
     opacity: 0;
-    animation: fadeIn 2.5s ease-in-out forwards;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    background: rgba(255, 255, 255, 0.3); /* Translucent background */
+    border-radius: 15px;
+    backdrop-filter: blur(20px); /* Glassy effect */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgb(219, 214, 214);
 }
 
+/* Contributors List Styles */
 .details ul {
     list-style-type: none;
     padding: 0;
 }
 
 .details ul li {
-    background: #f9fafb;
+    background: rgba(255, 255, 255, 0.3); /* Slightly translucent background */
     margin: 10px 0;
     padding: 12px;
     border-radius: 8px;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #faf7f7;
+    box-shadow: 0 4px 10px rgba(255, 250, 250, 0.24);
     transition: transform 0.3s ease;
 }
 
@@ -165,6 +171,7 @@ body {
     color: #ff4081;
     text-decoration: underline;
 }
+
 
 /* Animation Keyframes */
 @keyframes fadeInUp {
