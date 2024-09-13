@@ -1,12 +1,16 @@
 /* Font and Basic Styles */
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    background: url('luna.jpg') no-repeat center center fixed, 
+                linear-gradient(135deg, rgba(243, 244, 246, 0.5), rgba(229, 231, 235, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay; /* Optional: blends the gradient with the image */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+/* Existing styles here... */
 .container {
     margin: 50px auto;
     padding: 30px;
@@ -209,6 +213,7 @@ body {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 /* Back Link Styles */
 .back-link {
     display: block;
@@ -225,6 +230,7 @@ body {
     color: #ff4081;
     text-decoration: underline;
 }
+
 /* Contributors Link Styles */
 .contributors-link {
     display: block;
@@ -249,4 +255,35 @@ body {
 
 .contributors-link:active {
     background-color: #c2185b; /* Slightly darker shade when clicked */
+}
+
+/* Contributors List Styles */
+.details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details ul li {
+    background: #f9fafb;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.details ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Contributor Name Styles */
+.contributor-name {
+    font-weight: bold;
+    color: #e91e63; /* Color for the contributor's name */
+}
+
+/* Donation Amount Styles */
+.donation-amount {
+    color: #4caf50; /* Color for the donation amount */
 }

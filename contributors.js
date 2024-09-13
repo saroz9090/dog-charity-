@@ -7,8 +7,9 @@ function loadContributors() {
             contributorsList.innerHTML = '';
 
             data.contributors.forEach(contributor => {
+                // Create an HTML string with styles
                 const listItem = document.createElement('li');
-                listItem.textContent = `${contributor.name} donated Rs ${contributor.amount}`;
+                listItem.innerHTML = `<span class="contributor-name">${contributor.name}</span> donated <span class="donation-amount">Rs ${contributor.amount}</span>`;
                 contributorsList.appendChild(listItem);
             });
         });
